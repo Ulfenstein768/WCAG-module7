@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Example for a compliant website, acording WCAG 2.1."
+    />
+    <title>Pizza planet homepage</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Josefin+Sans&family=Sora&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <ul class="skipLinks">
+          <li><a href="#nav">Skip to navigation</a></li>
+          <li><a href="#main">Skip to main content</a></li>
+        </ul>
+      </header>
+      <nav id="nav">
+        <div class="logo">
+          <a href="index.html">
+            <img src="picref/pplogo.svg" alt="Pizza planet logo" />
+          </a>
+        </div>
+        <div class="navList" id="navigation">
+          <ul>
+            <li>
+              <a href="#">Menu</a>
+            </li>
+            <li>
+              <a href="#">Arcade</a>
+            </li>
+            <li>
+              <a href="#">Events</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="openingHours">
+          <h5>
+            Hours of Operation:
+            <span>
+              Sunday - Thursday | 11am - 9pm. Friday - Saturday | 11am - 11pm
+            </span>
+          </h5>
+        </div>
+      </nav>
+      <main id="main">
+        <section class="welcomeText">
+          <h1 id="titleHeader">Pizza planet</h1>
+          <h2>Mission control for fuel and fun</h2>
+          <p>
+            Pizza Planet is a unique and one of a kind dining and gamaing
+            experience rolled into one. We are a part restaurant, and part
+            awesome out of this world arcade! When you are not sure what to make
+            for dinner, make it a Pizza Planet night (or come play during the
+            day)!
+          </p>
+        </section>
+        <section class="pizzaCreator" aria-labelledby="pizzaCreator">
+          <h2 id="pizzaCreator">Not liking the menu? Create your own pizza!</h2>
+          <fieldset>
+            <legend id="crusts">Select your pizza crust.</legend>
+            <input id="regular" type="checkbox" name="crust" value="regular" />
+            <label for="regular">Regular Crust</label><br />
+            <input
+              id="stuffedCrust"
+              type="checkbox"
+              name="crust"
+              value="stuffedCrust"
+            />
+            <label for="stuffedCrust">Stuffed Crust</label><br />
+            <input
+              id="flatbreadCrust"
+              type="checkbox"
+              name="crust"
+              value="flatbreadCrust"
+            />
+            <label for="flatbreadCrust">Flat Bread Crust</label><br />
+            <input
+              id="thinCrust"
+              type="checkbox"
+              name="crust"
+              value="thinCrust"
+            />
+            <label for="thinCrust">Thin Crust</label><br />
+          </fieldset>
+          <fieldset>
+            <legend id="sauces">Select your Sauce!</legend>
+            <input
+              id="tomatoSauce"
+              type="checkbox"
+              name="sauces"
+              value="tomatoSauce"
+            />
+            <label for="tomatoSauce">Tomato Sauce</label><br />
+            <input
+              id="garlicOil"
+              type="checkbox"
+              name="sauces"
+              value="garlicOil"
+            />
+            <label for="garlicOil">Garlic Oil</label><br />
+            <input
+              id="barbecueSauce"
+              type="checkbox"
+              name="sauces"
+              value="barbecueSauce"
+            />
+            <label for="barbecueSauce">Barbecue Sauce</label><br />
+          </fieldset>
+          <fieldset>
+            <legend id="toppings">Select your Pizza toppings!</legend>
+            <input id="ham" type="checkbox" name="toppings" value="ham" />
+            <label for="ham">Ham</label><br />
+            <input
+              id="pepperoni"
+              type="checkbox"
+              name="toppings"
+              value="pepperoni"
+            />
+            <label for="pepperoni">Pepperoni</label><br />
+            <input
+              id="mushrooms"
+              type="checkbox"
+              name="toppings"
+              value="mushrooms"
+            />
+            <label for="mushrooms">Mushrooms</label><br />
+            <input id="olives" type="checkbox" name="toppings" value="olives" />
+            <label for="olives">Olives</label>
+          </fieldset>
+          <fieldset>
+            <legend id="cheeses">Select your favorite Cheeese!</legend>
+            <input
+              id="mozzarella"
+              type="checkbox"
+              name="chesses"
+              value="mozzarella"
+            />
+            <label for="mozzarella">Mozzarella Cheese</label><br />
+            <input
+              id="provolone"
+              type="checkbox"
+              name="chesses"
+              value="provolone"
+            />
+            <label for="provolone">Provolone Cheese</label><br />
+            <input
+              id="cheddar"
+              type="checkbox"
+              name="chesses"
+              value="cheddar"
+            />
+            <label for="cheddar">Cheddar Cheese</label><br />
+            <input id="gouda" type="checkbox" name="chesses" value="gouda" />
+            <label for="gouda">Gouda Cheese</label><br />
+          </fieldset>
+          <button>Create pizza</button>
+        </section>
+        <section class="newsletter" aria-labelledby="newsletter">
+          <h2 id="newsletter">Get notified when something new happens</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input id="name" type="text" autocomplete="name" />
+            <label for="email">Enter your email: </label>
+            <input type="email" name="email" id="email" required />
+            <button aria-label="Subscribe">Subscibe!</button>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <p>Web Content Accessibility Guideline Assignment</p>
+        <a href="#navigation">Back to top</a>
+      </footer>
+    </div>
+  </body>
+</html>
