@@ -107,8 +107,9 @@ nav {
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
-.openingHours h5 {
+.openingHours p {
   color: #56f09f;
+  font-size: var(--header5);
 }
 .openingHours span {
   color: #9bacff;
